@@ -4,6 +4,7 @@ import './App.css'
 import DaisyNav from './components/DaisyNav/DaisyNav'
 import NavBar from './components/NavBer/Navber'
 import PricingOptions from './components/PricingOptions/PricingOptions';
+import ResultChart from './components/ResultsChart/ResultChart';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Suspense fallback={<span class="loading loading-dots loading-lg"></span>}>
               <PricingOptions priceingPromise={priceingPromise}></PricingOptions>
           </Suspense>
+          <ResultChart></ResultChart>
       </main>
 
     </>
